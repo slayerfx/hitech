@@ -1,0 +1,645 @@
+/* ==========================================
+   1. BASE & MOBILE FIRST (Par défaut < 768px)
+   ========================================== */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.container {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* ==========================================
+   TOP BAR (Accessibilité)
+   ========================================== */
+.top-bar {
+  background: #f8f9fa;
+  text-align: center;
+  padding: 10px 15px;
+  font-size: 0.85rem;
+}
+
+.top-bar p {
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.options-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.options {
+  color: #555;
+}
+
+.options a {
+  color: #0056b3;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.options a:hover {
+  text-decoration: underline;
+}
+
+/* ==========================================
+   MAIN NAV (Header principal)
+   ========================================== */
+.main-nav {
+  background: linear-gradient(to bottom, #2980b9, #6dd5fa);
+  color: white;
+  padding: 20px 0;
+}
+
+.nav-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.logo img {
+  width: 60px;
+  height: auto;
+}
+
+.logo-text {
+  margin-top: 5px;
+}
+
+.logo .site-name {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.logo-text p {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.user-menu {
+  display: flex;
+  justify-content: center;
+  gap: 2.5em;
+  width: 100%;
+}
+
+.menu-item {
+  text-align: center;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.menu-item i {
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+/* ==========================================
+   CATEGORY NAV (Menu catégories)
+   ========================================== */
+.category-nav {
+  background: #e3f2fd;
+  padding: 0;
+}
+
+.category-nav ul {
+  list-style: none;
+}
+
+.category-nav li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 15px;
+  text-decoration: none;
+  color: #0056b3;
+  border-bottom: 1px solid #c8e1f5;
+  font-size: 0.95rem;
+}
+
+.category-nav li:last-child a {
+  border-bottom: none;
+}
+
+.category-nav i {
+  margin-right: 10px;
+  width: 20px;
+  text-align: center;
+}
+
+/* ==========================================
+   PRODUCT PRESENTATION
+   ========================================== */
+.product-presentation {
+  padding: 20px 0;
+}
+
+.product-presentation h1 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.product-presentation h2 {
+  font-size: 1.6rem;
+  color: #333;
+  margin: 30px 0 15px;
+}
+
+.product-presentation h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin: 25px 0 15px;
+}
+
+/* Navigation produit */
+.product-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.product-nav a {
+  color: #0056b3;
+  text-decoration: underline;
+  font-size: 0.95rem;
+}
+
+/* Tags / Étiquettes */
+.tag-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 15px 0;
+}
+
+.tag-list li {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px 12px;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* ==========================================
+   SLIDER
+   ========================================== */
+.main-slider {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.thumbs-slider {
+  height: auto;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+
+.thumbs-slider .swiper-slide {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.thumbs-slider .swiper-slide img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.thumbs-slider .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.disclaimer {
+  font-size: 0.8rem;
+  color: #888;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* ==========================================
+   PURCHASE ZONE (Zone d'achat)
+   ========================================== */
+.purchase-zone {
+  padding: 20px 0;
+}
+
+.brand {
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.price-container {
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.eco-tax {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+/* Boutons */
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.btn-cart {
+  background-color: #006687;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.btn-cart:hover {
+  background-color: #005570;
+}
+
+.btn-wishlist {
+  color: #006687;
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.btn-wishlist:hover {
+  text-decoration: underline;
+}
+
+.garantie {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.description p {
+  text-align: justify;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+/* Liste des caractéristiques */
+.specs-list {
+  padding-left: 20px;
+  margin-top: 15px;
+}
+
+.specs-list li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+  color: #444;
+}
+
+/* ==========================================
+   PRODUCT DESCRIPTION (Descriptif)
+   ========================================== */
+.product-description {
+  margin-top: 40px;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.desc-block {
+  margin-bottom: 30px;
+}
+
+.desc-block h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.desc-image {
+  text-align: center;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.desc-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.desc-block p {
+  text-align: justify;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+/* ==========================================
+   TECHNICAL SPECS (Caractéristiques)
+   ========================================== */
+.technical-specs {
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+
+.technical-specs h2 {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+}
+
+.specs-group {
+  margin-bottom: 25px;
+}
+
+.specs-group h3 {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.specs-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.specs-table tr {
+  border-bottom: 1px solid #eee;
+}
+
+.specs-table td {
+  padding: 10px 5px;
+  color: #444;
+}
+
+.specs-table td:first-child {
+  width: 55%;
+  color: #666;
+}
+
+.specs-table td:last-child {
+  font-weight: 500;
+}
+
+.specs-table tr:hover {
+  background-color: #fafafa;
+}
+
+/* ==========================================
+   2. TABLETTE (min-width: 768px)
+   ========================================== */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+
+  /* Top bar tablette */
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  .top-bar p {
+    margin-bottom: 0;
+  }
+
+  .options-group {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  /* Main nav tablette */
+  .nav-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .logo img {
+    width: 50px;
+  }
+
+  .logo-text {
+    margin-top: 0;
+    margin-left: 10px;
+  }
+
+  .user-menu {
+    width: auto;
+    gap: 2em;
+  }
+
+  /* Category nav tablette - en ligne */
+  .category-nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .category-nav li a {
+    border-bottom: none;
+    border-right: 1px solid #c8e1f5;
+    padding: 12px 20px;
+  }
+
+  .category-nav li:last-child a {
+    border-right: none;
+  }
+
+  /* Product nav tablette */
+  .product-nav {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  /* Tags tablette */
+  .tag-list {
+    gap: 10px;
+  }
+
+  /* Actions tablette */
+  .actions {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .btn-cart {
+    flex: 0 0 auto;
+  }
+
+  /* Specs table tablette */
+  .specs-table td:first-child {
+    width: 60%;
+  }
+
+  /* Description blocks */
+  .desc-block h3 {
+    font-size: 1.3rem;
+  }
+}
+
+/* ==========================================
+   3. DESKTOP (min-width: 1200px)
+   ========================================== */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+
+  /* Top bar desktop */
+  .top-bar {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+
+  /* Main nav desktop */
+  .main-nav {
+    padding: 15px 0;
+  }
+
+  .logo img {
+    width: 60px;
+  }
+
+  .logo .site-name {
+    font-size: 1.6rem;
+  }
+
+  .user-menu {
+    gap: 3em;
+  }
+
+  .menu-item {
+    font-size: 0.85rem;
+  }
+
+  .menu-item i {
+    font-size: 1.3rem;
+  }
+
+  /* Category nav desktop */
+  .category-nav li a {
+    padding: 15px 30px;
+    font-size: 1rem;
+  }
+
+  /* Product section desktop */
+  .product-presentation h1 {
+    font-size: 2.2rem;
+  }
+
+  .product-presentation h2 {
+    font-size: 1.8rem;
+  }
+
+  /* Product nav desktop */
+  .product-nav {
+    gap: 30px;
+  }
+
+  .product-nav a {
+    font-size: 1rem;
+  }
+
+  /* Tags desktop */
+  .tag-list li {
+    padding: 6px 15px;
+    font-size: 0.9rem;
+  }
+
+  /* Slider desktop */
+  .main-slider {
+    max-width: 100%;
+  }
+
+  /* Purchase zone desktop */
+  .price {
+    font-size: 2.2rem;
+  }
+
+  .btn-cart {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+  }
+
+  /* Description desktop */
+  .desc-block h3 {
+    font-size: 1.4rem;
+  }
+
+  /* Technical specs desktop - 2 colonnes */
+  .technical-specs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .technical-specs h2 {
+    grid-column: 1 / -1;
+    font-size: 1.8rem;
+  }
+
+  .specs-group h3 {
+    font-size: 1.2rem;
+  }
+
+  .specs-table {
+    font-size: 0.95rem;
+  }
+
+  .specs-table td {
+    padding: 12px 10px;
+  }
+}

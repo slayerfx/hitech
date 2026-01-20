@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HiTech.NET - Mobile First</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <header class="header container">
+      <div class="top-bar container">
+        <p>Options d'affichage / accessibilité</p>
+        <div class="options-group">
+          <div class="options">
+            Thème : <a href="#" data-theme="dark">sombre</a>
+            <a href="#" data-theme="contrast">contrasté</a>
+            <a href="#" data-theme="light">clair</a>
+          </div>
+          <div class="options">
+            Interlignage : <a href="#" data-spacing="simple">simple</a>
+            <a href="#" data-spacing="augmente">augmenté</a>
+          </div>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <div class="container nav-content">
+          <div class="logo">
+            <img
+              src="../HiTech/instructions/FRONT/images/logo.svg"
+              alt="logo"
+              width="80"
+            />
+            <div class="logo-text">
+              <span class="site-name">HiTech.NET</span>
+              <p>Tout le matériel High-Tech</p>
+            </div>
+          </div>
+
+          <div class="user-menu">
+            <div class="menu-item">
+              <i class="far fa-user"></i>
+
+              <span>Mon compte</span>
+            </div>
+            <div class="menu-item">
+              <i class="fas fa-shopping-cart"></i>
+              <span>Mon panier</span>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <nav class="category-nav container">
+        <ul>
+          <li>
+            <a href="#"><i class="fas fa-desktop"></i> Ordinateurs</a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fas fa-database"></i> Périphériques & composants</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-mobile-alt"></i> Téléphones</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-clock"></i> Objets connectés</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="product-presentation">
+        <h1>AOC 24B1XHS</h1>
+
+        <nav class="product-nav">
+          <a href="#presentation">Présentation</a>
+          <a href="#descriptif">Descriptif</a>
+          <a href="#specs">Caractéristiques techniques</a>
+        </nav>
+
+        <h3 id="presentation">Présentation</h3>
+
+        <ul class="tag-list">
+          <li>1920 x 1080 pixels</li>
+          <li>7 ms</li>
+          <li>Format large 16/9</li>
+          <li>Dalle IPS</li>
+          <li>HDMI</li>
+          <li>VGA</li>
+          <li>Noir</li>
+        </ul>
+
+        <div class="swiper main-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="../HiTech/instructions/FRONT/images/slider/slide-1-lg.jpg"
+                alt="Vue face"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../HiTech/instructions/FRONT/images/slider/slide-2-lg.jpg"
+                alt="Vue face"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../HiTech/instructions/FRONT/images/slider/slide-3-lg.jpg"
+                alt="Vue face"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../HiTech/instructions/FRONT/images/slider/slide-4-lg.jpg"
+                alt="Vue face"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../HiTech/instructions/FRONT/images/slider/slide-5-lg.jpg"
+                alt="Vue face"
+              />
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <p class="disclaimer">Photos non contractuelles</p>
+        </div>
+
+        <div class="swiper thumbs-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="../HiTech/instructions/FRONT/images/slider/slide-1-lg.jpg"
+                alt="Vue face"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../HiTech/instructions/FRONT/images/slider/slide-2-lg.jpg"
+                alt="Vue face"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../HiTech/instructions/FRONT/images/slider/slide-3-lg.jpg"
+                alt="Vue face"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../HiTech/instructions/FRONT/images/slider/slide-4-lg.jpg"
+                alt="Vue face"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../HiTech/instructions/FRONT/images/slider/slide-5-lg.jpg"
+                alt="Vue face"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="purchase-zone container">
+          <p class="brand">Marque: AOC</p>
+
+          <div class="price-container">
+            <span class="price">109€94</span>
+            <p class="eco-tax">dont éco-participation 1€70</p>
+          </div>
+
+          <div class="actions">
+            <button class="btn-cart">Ajouter au panier</button>
+            <a href="#" class="btn-wishlist">Ajouter à ma liste d'envie</a>
+          </div>
+
+          <p class="garantie">Garantie: 2 années vendeur</p>
+
+          <div class="description">
+            <p>
+              Un écran 23,8" Full HD et sans bords; c'est sûrement votre futur
+              moniteur pour la maison ou le bureau. AOC vous propose le 24B1XHS,
+              un produit élégant au look doté d'une dalle VA avec un temps de
+              réponse rapide de 7 ms en résolution 1920 x 1080 pixels. Cet écran
+              WLED très fonctionnel offre un contenu avec un fréquence de 60 Hz,
+              idéal pour tous les usages du quotidien.
+            </p>
+
+            <ul class="specs-list">
+              <li>
+                Écran large de 23.8" avec résolution Full HD (1920 x 1080)
+              </li>
+              <li>
+                Des couleurs riches et nuancées avec un contraste dynamique de
+                20.000.000:1 (typique 1000:1)
+              </li>
+              <li>Temps de réponse de 7 ms</li>
+              <li>Dalle IPS</li>
+              <li>Luminosité 250 cd/m²</li>
+              <li>Modes Flicker-Free et Anti-lumière bleue (Low blue mode)</li>
+              <li>Connecteurs : HDMI 1.4, VGA</li>
+              <li>Design sans contour & profil plat</li>
+              <li>Consommation d'énergie modeste : 25 Watts</li>
+              <li>Dimensions (avec support) : 419.8 x 540.1 x 186.8 mm</li>
+              <li>Poids : 2.48 kg</li>
+            </ul>
+          </div>
+        </div>
+
+        <section id="descriptif" class="product-description container">
+          <h2>Descriptif</h2>
+          <article class="desc-block">
+            <h3>Un moniteur Full HD performant et tout en finesse</h3>
+            <div class="desc-image">
+              <img
+                src="../HiTech/instructions/FRONT/images/slider/screen.png"
+                alt="Schéma dimensions 23.8 pouces"
+              />
+            </div>
+            <p>
+              Issu de la série B1, le moniteur AOC 24B1XHS dispose de tous les
+              atouts indispensables pour offrir une expérience utilisateur
+              agréable. Son écran Full HD de 23.8" s'accompagne d'une dalle IPS
+              ainsi que d'un temps de réponse de 7 ms pour une image toujours
+              performante. Aussi, le 24B1XHS séduit par son profil plat et son
+              design sans contour qui favorise le plaisir visuel et l'immersion.
+              Ce moniteur WLED trouvera facilement une place de choix sur votre
+              bureau pour toutes vos utilisations quotidiennes.
+            </p>
+          </article>
+
+          <article class="desc-block">
+            <h3>Appréciez le design sans contour</h3>
+            <div class="desc-image">
+              <img
+                src="../HiTech/instructions/FRONT/images/slider/desc-1.jpg"
+                alt="Configuration multi-écrans"
+              />
+            </div>
+            <p>
+              En plus du look moderne et attrayant qu'il procure, le design sans
+              contour permet des configurations à plusieurs écrans sans
+              interruption. Votre curseur, vos fenêtres ne sont plus perdus dans
+              les abysses sombres des contours lorsque plusieurs écrans sont
+              placés les uns à côté des autres.
+            </p>
+            <p>
+              Le profil plat de ce moniteur AOC offre de nombreux avantages.
+              Très élégant sous tous les angles, il devient un choix idéal dans
+              les espaces publics. Sa finesse et sa conception moderne lui
+              permettent d'occuper moins de place sur le bureau.
+            </p>
+          </article>
+
+          <article class="desc-block">
+            <h3>Tout le confort nécessaire</h3>
+            <div class="desc-image">
+              <img
+                src="../HiTech/instructions/FRONT/images/slider/desc-2.jpg"
+                alt="Écran confort visuel"
+              />
+            </div>
+            <p>
+              Agréable visuellement et intuitif, ce moniteur dispose également
+              d'une dalle IPS. Cette dernière reproduit des couleurs éclatantes
+              et offre de très larges angles de vue. De cette façon, les images
+              gardent toujours un excellent aspect et une parfaite précision,
+              quel que soit l'angle auquel vous regardez l'écran.
+            </p>
+            <p>
+              Vous voulez utiliser votre écran même dans un environnement très
+              lumineux, à côté d'une fenêtre au soleil par exemple ? La haute
+              luminosité de 250 cd/m² garantit une bonne visibilité, même dans
+              des conditions difficiles.
+            </p>
+          </article>
+        </section>
+
+        <section id="specs" class="technical-specs container">
+          <h2>Caractéristiques techniques</h2>
+
+          <div class="specs-group">
+            <h3>Affichage</h3>
+            <table class="specs-table">
+              <tr>
+                <td>Taille de l'écran</td>
+                <td>23.8 pouces</td>
+              </tr>
+              <tr>
+                <td>Format de l'écran</td>
+                <td>16/9</td>
+              </tr>
+              <tr>
+                <td>Type de Dalle</td>
+                <td>Dalle IPS</td>
+              </tr>
+              <tr>
+                <td>Technologie LCD</td>
+                <td>IPS</td>
+              </tr>
+              <tr>
+                <td>Résolution Max</td>
+                <td>1920 x 1080 pixels</td>
+              </tr>
+              <tr>
+                <td>Luminosité</td>
+                <td>250 cd/m²</td>
+              </tr>
+              <tr>
+                <td>Temps de réponse</td>
+                <td>7 ms</td>
+              </tr>
+              <tr>
+                <td>Flicker-Free</td>
+                <td>Oui</td>
+              </tr>
+              <tr>
+                <td>Anti-lumière bleue</td>
+                <td>Oui</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="specs-group">
+            <h3>Ecran</h3>
+            <table class="specs-table">
+              <tr>
+                <td>Type d'écran</td>
+                <td>LED</td>
+              </tr>
+              <tr>
+                <td>Ecran large</td>
+                <td>Oui</td>
+              </tr>
+              <tr>
+                <td>Borderless</td>
+                <td>Oui</td>
+              </tr>
+              <tr>
+                <td>Fréquence verticale mini</td>
+                <td>60 Hz</td>
+              </tr>
+              <tr>
+                <td>Type d'activités</td>
+                <td>Bureautique</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="specs-group">
+            <h3>Ergonomie</h3>
+            <table class="specs-table">
+              <tr>
+                <td>Pied amovible</td>
+                <td>Oui</td>
+              </tr>
+              <tr>
+                <td>Fixation VESA</td>
+                <td>N/A</td>
+              </tr>
+              <tr>
+                <td>Inclinaison arrière</td>
+                <td>21.5 Degré(s)</td>
+              </tr>
+              <tr>
+                <td>Inclinaison avant</td>
+                <td>3.5 Deg</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
