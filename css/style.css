@@ -31,6 +31,12 @@ body {
   font-size: 0.85rem;
 }
 
+.top-bar-content {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .top-bar p {
   margin-bottom: 5px;
   color: #666;
@@ -70,6 +76,9 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .logo {
@@ -122,12 +131,14 @@ body {
    CATEGORY NAV (Menu catégories)
    ========================================== */
 .category-nav {
-  background: #e3f2fd;
+  background: #e2f7ff;
   padding: 0;
 }
 
 .category-nav ul {
   list-style: none;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 .category-nav li a {
@@ -431,15 +442,15 @@ body {
 }
 
 /* ==========================================
-   2. TABLETTE (min-width: 768px)
+   2. TABLETTE (min-width: 480px)
    ========================================== */
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .container {
     max-width: 720px;
   }
 
   /* Top bar tablette */
-  .top-bar {
+  .top-bar-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -531,9 +542,9 @@ body {
 }
 
 /* ==========================================
-   3. DESKTOP (min-width: 1200px)
+   3. DESKTOP (min-width: 960px)
    ========================================== */
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .container {
     max-width: 1140px;
   }
