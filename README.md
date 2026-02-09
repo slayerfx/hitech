@@ -1,6 +1,6 @@
 # Hitech
 
-Page pour une entreprise tech avec presentation de produits. Fait pendant ma formation a la 3W Academy.
+Page pour une entreprise tech avec présentation de produits. Fait pendant ma formation à la 3W Academy.
 
 ## Technologies
 
