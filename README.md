@@ -1,6 +1,6 @@
 # Hitech
 
-Page pour une entreprise tech avec présentation de produits. Fait pendant ma formation à la 3W Academy.
+Vitrine tech avec intégration d'un carrousel d'images.
 
 ## Technologies
 
